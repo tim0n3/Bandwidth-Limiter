@@ -22,13 +22,13 @@ TC=/sbin/tc
 IF=eth0             # Interface
 
 # Download limit (in mega bits)
-DNLD=100mbit          # DOWNLOAD Limit
+DNLD=2mbit          # DOWNLOAD Limit
 
 # Upload limit (in mega bits)
-UPLD=100mbit          # UPLOAD Limit
+UPLD=1mbit          # UPLOAD Limit
 
 # IP address of the machine we are controlling
-IP=1.2.3.4     # Host IP
+IP=192.168.88.200     # Host IP
 
 # Filter options for limiting the intended interface.
 U32="$TC filter add dev $IF protocol ip parent 1:0 prio 1 u32"
